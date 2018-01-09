@@ -89,6 +89,7 @@ def setup_student_names(workbook, worksheet, grading_id, section_id):
     if students is not None and len(students) > 0:
         student_count = 0
         row_count = 2
+        students = sorted(students)
         for student in students:
             student_count = (student_count + 1) % HEAVY_ROW_MODIFIER
             first_name  = student[0]
