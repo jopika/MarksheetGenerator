@@ -1,5 +1,5 @@
 # MarksheetGenerator
-A script that generates Marksheets for Grading
+A script that can quicky generate Marksheets using CSV inputs
 
 ## Introduction
 This script was created due to the repetative task of generating Marksheets for the classes/labs I teach.  
