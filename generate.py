@@ -1,8 +1,9 @@
 import xlsxwriter
+import collections
 
 # Global Values
 GLOBAL_STUDENTS = {}
-GLOBAL_SECTIONS = {}
+GLOBAL_SECTIONS = collections.OrderedDict()
 GLOBAL_GRADING = {}
 
 # Students before drawing heavy line separator (-1 to disable)
@@ -14,8 +15,8 @@ GRADING_FILE_PATH = "./data/grading.csv"
 SECTION_FILE_PATH = "./data/sections.csv"
 
 # Set both flags to true for PDF Batch DUPLEX Printing
-PADDING_FLAG = True
-DUPLICATE_FLAG = True
+PADDING_FLAG = False
+DUPLICATE_FLAG = False
 MARKSHEET_COUNT = 2
 
 # Workbook generator
