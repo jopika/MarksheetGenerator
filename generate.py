@@ -198,5 +198,7 @@ if __name__ == '__main__':
                 setup_student_names(workbook, worksheet, grading_scheme, section_id)
                 if PADDING_FLAG:
                     # Add extra white pages for PDF duplex printing
-                    workbook.add_worksheet()
+                    padding_sheet = workbook.add_worksheet()
+                    padding_sheet.write(0,0," ")
+                    padding_sheet.set_landscape()
         workbook.close()
