@@ -1,5 +1,9 @@
+
+data/*
+*.pdf
+*.xlsx
+
 # IDEA
 
 .idea/*
-
 */.idea/*
