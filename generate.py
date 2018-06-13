@@ -117,6 +117,9 @@ def setup_student_names(workbook, worksheet, grading_id, section_id):
 def add_student_info(input_string):
     """Adds student to global map, based on input_string
     String format is csv where: {FirstName},{LastName},{Section/Division}"""
+    if input_string.startswith("#"):
+        # print("skipped: " + input_string)
+        return
     values = input_string.split(",")
     if len(values) != 3:
         print("Error parsing: " + input_string)
@@ -136,7 +139,9 @@ def add_student_info(input_string):
 def add_grading_info(input_string):
     """Adds grading scheme to global map, based on input_string
     String format is csv where: {Grading_ID}, [{grading_1}, {grading_2}, ...]"""
-    # TODO: Complete this
+    if input_string.startswith("#"):
+        # print("skipped: " + input_string)
+        return
     values = input_string.split(",")
     if len(values) == 0:
         print("Error parsing: " + input_string)
@@ -147,7 +152,9 @@ def add_grading_info(input_string):
 def add_section_info(input_string):
     """Adds section info, to generate extra information in the headers
     String format is csv where: {SectionName},{LeftText},{CenterText},{RightText}"""
-    # TODO: Complete this
+    if input_string.startswith("#"):
+        # print("skipped: " + input_string)
+        return
     values = input_string.split(",")
     if len(values) != 4:
         print("Error parsing: " + input_string)
