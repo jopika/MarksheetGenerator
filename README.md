@@ -21,9 +21,11 @@ There are three main files you need to have:
 
 Each file has a slightly different format, but they are all CSVs.
 
+Install the needed libraries by running `pip -r requirements.txt`.
+x
 After this, you can edit the flags and constants in the python script.
 
-Finally, run the python script doing something like `py generate.py`
+Finally, run the python script doing something like `py generate.py`.
 
 ## File formats
 ### Students File
